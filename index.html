@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <section class="container">
+        <div class="heading">
+            <h1 class="animate__animated animate__bounce">
+                Guess The Number Between 1 to 20
+            </h1>
+            <p>
+                Guess the secret number between 1 and 20 and see how close you can get. Let the guessing begin!"
+            </p>
+        </div>
+        <div class="guess-num">
+            <label class="typing-label">Enter your <br> Guess</label>
+            <input id="inp" type="number" placeholder="e.g. 2 , 12 , 8">
+            <div class="check-button">
+                <button class="check-btn">TRY</button>
+                <div>
+                    <button id="restartButton">Restart</button>
+                </div>    
+            </div>
+        </div>
+        <div id="lifes">Lives: 5</div>
+
+    </section>
+</body>
+<script src="game.js"></script>
+</html>
