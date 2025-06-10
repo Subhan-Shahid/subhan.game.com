@@ -17,6 +17,10 @@ b.addEventListener('click',function(){
         h.style.color = 'yellow';
          bg.style.backgroundColor= 'red'
           new Audio('558121__abdrtar__wrong.mp3').play();
+          i.classList.add('shake');
+          setTimeout(function() {
+            i.classList.remove('shake');
+          }, 1000); 
     }
      if(r>0 &&  r < i.value){
         loseLife();
@@ -24,6 +28,10 @@ b.addEventListener('click',function(){
          bg.style.backgroundColor= 'red'
          h.style.color = 'yellow';
          new Audio('558121__abdrtar__wrong.mp3').play();
+         i.classList.add('shake');
+         setTimeout(function() {
+            i.classList.remove('shake');
+          }, 1000);
     }
     if(i.value<1 || i.value>20){
       alert('shyaar na bun')
@@ -53,7 +61,7 @@ function gameOver() {
 
 window.addEventListener('keydown', function (event){
   if(event.key == 'Enter'){
-    useful(); 
+    useful();
   }
 })
 function useful(){
@@ -70,6 +78,10 @@ if (r>0 && r > i.value){
     h.style.color = 'yellow';
      bg.style.backgroundColor= 'red'
      new Audio('558121__abdrtar__wrong.mp3').play();
+      i.classList.add('shake');
+      setTimeout(function() {
+            i.classList.remove('shake');
+          }, 1000);
 }
  if(r>0 &&  r < i.value){
     loseLife();
@@ -77,6 +89,10 @@ if (r>0 && r > i.value){
       h.style.color = 'yellow';
      bg.style.backgroundColor= 'red'
      new Audio('558121__abdrtar__wrong.mp3').play();
+     i.classList.add('shake');
+     setTimeout(function() {
+            i.classList.remove('shake');
+          }, 1000);
 }
 if(i.value<1 || i.value>20){
   alert('shyaar na bun')
