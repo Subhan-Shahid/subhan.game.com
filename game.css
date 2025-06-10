@@ -50,7 +50,31 @@ body{
     color: black;
     animation: typing 3s steps(30, end) 1,  blink .75s step-end 1;
   }
-  
+
+  .shake{
+    color: red;
+    animation: shake 0.5s ease-in-out;
+  }
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-5px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(5px);
+    }
+  }
+
   @keyframes typing {
     0% {
       width: 0;
